@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    border: 2px dashed darkblue;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.description {
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    border: 2px dashed red;
+}
+
+.description h2 {
+    width: 100%;
+    color: #484a46;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.4px;
+    border: 1px solid purple;
+}
+
