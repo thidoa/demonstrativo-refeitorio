@@ -1,35 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
+#video_promocional {
+    width: 100%;
+    height: 100vh;
+    background-color: #6eb1a7;
+}
+
+.video_passo {
+    width: 100%;
+    height: 100%;
+}
+/* 
+#barra {
+    border: 1px solid black;
+    background-color: yellow;
+    width: 640px;
+    height: 20px;
+    padding: 0px;
+}
+
+#barra_progresso {
+    background-color: green;
+    height: 20px;
+    width: 0px;
+} */
+
 section {
     display: flex;
     justify-content: space-between;
-    border: 2px dashed darkblue;
+    /* border: 2px dashed darkblue; */
 }
 
 .image {
     width: 50%;
+    /* border: 2px dashed red; */
 }
 
-.image img {
+.image video {
     width: 100%;
+    /* border: 2px solid blue; */
 }
 
 .description {
     width: 50%;
     font-family: "Open Sans", sans-serif;
-    border: 2px dashed red;
+    /* padding: 20px; */
+    /* border: 2px dashed red; */
 }
 
 .description h2 {
     width: 100%;
     color: #484a46;
     font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.content .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #14bf98;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.content p {
+    color: #484a46;
+    box-shadow: none;
+    font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.625rem;
     letter-spacing: -0.4px;
-    border: 1px solid purple;
+    text-align: left;
 }
-
