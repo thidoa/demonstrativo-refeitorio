@@ -38,12 +38,25 @@ section {
 
 .image {
     width: 50%;
-    /* border: 2px dashed red; */
 }
 
 .image video {
     width: 100%;
     /* border: 2px solid blue; */
+}
+
+.left {
+    border-right: 2px solid green;
+    /* border-bottom: 2px solid #14bf98;
+    border-top: 2px solid #14bf98; */
+    /* background: #14bf98; */
+}
+
+.right {
+    /* border-top: 2px solid #14bf98;
+    border-bottom: 2px solid #14bf98; */
+    border-left: 2px solid green;
+    /* background: #14bf98; */
 }
 
 .description {
@@ -82,6 +95,12 @@ section {
     text-align: center;
 }
 
+.content .attention {
+    background-color: #FFDA1C;
+    color: #4B4B4B;
+    border: 1px solid #14bf98;
+}
+
 .content p {
     color: #484a46;
     box-shadow: none;
@@ -90,4 +109,22 @@ section {
     line-height: 1.625rem;
     letter-spacing: -0.4px;
     text-align: left;
+}
+
+.desenvolvedores {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+} 
+
+.desenvolvedor {
+    padding: 10px;
+}
+
+.linha {
+    background-color: green;
+    width: 2px;
+    height: 10px;
+    /* border: 1px solid green; */
 }
