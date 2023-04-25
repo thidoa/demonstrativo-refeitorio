@@ -16,6 +16,7 @@ function atualizarBarra() {
     if(!elementoVideo.paused) {
         // 640 - duracaoTotal
         //x - curentTime
+        //https://htmlrev.com/preview/lake/
 
         var resultado = (640 * elementoVideo.currentTime)/duracaoTotal;
         barraProgresso.style.width = parseInt(resultado) + "px";

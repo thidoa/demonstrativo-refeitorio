@@ -5,14 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carroussel.css">
 
     
 
     <title>Demonstração do projeto refetório</title>
 </head>
 <body>
-    <!-- https://htmlrev.com/preview/lake/ -->
+    
     <main>
+        <!-- <div class="container">
+            <button class="arrow-left control" aria-label="Previous image"><</button>
+            <button class="arrow-right control" aria-label="Previous image">></button>
+            <div class="gallery-wrapper">
+              <div class="gallery">
+                <img class="item current-item" src="img/demonstrativo_1.png">
+                <img class="item" src="img/demonstrativo_2.png">
+                <img class="item" src="img/demonstrativo_3.png">
+                <img class="item" src="img/demonstrativo_4.png">
+              </div>
+            </div>
+        </div> -->
         <div>
             <video id="video_promocional" width="420" height="340"  autoplay loop muted>
                 <source src="img/video-dilvugar.mp4" type="video/mp4">
@@ -21,7 +34,7 @@
                 </object>
             </video>
         </div>
-        <section>
+        <section class="line">
             <div class="image left">
                 <video class="video_passo" width="420" height="340"  autoplay loop muted>
                     <source src="img/video-login-aluno.mp4" type="video/mp4">
@@ -38,7 +51,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="line">
             <div class="description">
                 <h2>Página principal do aluno</h2>
                 <div class="content">
@@ -61,11 +74,10 @@
                         <embed width="320" height="240" src="img/video-tela-princeipal-aluno.mp4">
                     </object>
                 </video>
-                <!-- <img src="img/tela-login-aluno.png" alt=""> -->
             </div>
         </section>
 
-        <section>
+        <section class="line">
             <div class="image left">
                 <video class="video_passo" width="420" height="340"  autoplay loop muted>
                     <source src="img/video-faltas-aluno.mp4" type="video/mp4">
@@ -87,7 +99,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="line">
             <div class="description">
                 <h2>Login do funcionário</h2>
                 <div class="content">
@@ -104,7 +116,7 @@
                 </video>
             </div>
         </section>
-        <section>
+        <section class="line">
             <div class="image left">
                 <video class="video_passo" width="420" height="340"  autoplay loop muted>
                     <source src="img/video-pagina-principal-funcionario.mp4" type="video/mp4">
@@ -125,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="line">
             <div class="description">
                 <h2>Gerenciamento de faltas funcionario</h2>
                 <div class="content">
@@ -146,7 +158,7 @@
                 </video>
             </div>
         </section>
-        <section>
+        <section class="line">
             <div class="image left">
                 <video class="video_passo" width="420" height="340"  autoplay loop muted>
                     <source src="img/video-quentinhas-extras-funcionario.mp4" type="video/mp4">
@@ -169,14 +181,14 @@
         </section>
         <div class="desenvolvedores">
             <div class="desenvolvedor">
-                <p>Thiago</p>
+                <a href="https://thidoa.netlify.app/" target="_blank">Thiago</a>
             </div>
-            <div class="linha"></div>
             <div class="desenvolvedor">
-                <p>Devid</p>
+                <a href="https://www.linkedin.com/in/devid-teofilo" target="_blank">Devid</a>
             </div>
         </div>
     </main>
+    <script src="carroussel.js"></script>
     <!-- <script src="main.js"></script> -->
 </body>
 </html>

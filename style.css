@@ -9,12 +9,16 @@
     width: 100%;
     height: 100vh;
     background-color: #6eb1a7;
+    border: 5px solid green;
 }
 
 .video_passo {
-    width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid green;
+    padding: 2px;
 }
+
 /* 
 #barra {
     border: 1px solid black;
@@ -33,7 +37,20 @@
 section {
     display: flex;
     justify-content: space-between;
-    /* border: 2px dashed darkblue; */
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    background-color: green;
+    right: 50%;
+    width: 2px;
+    height: 100%;
+    display: flex;
 }
 
 .image {
@@ -41,53 +58,72 @@ section {
 }
 
 .image video {
-    width: 100%;
-    /* border: 2px solid blue; */
+    width: 80%;
 }
 
 .left {
-    border-right: 2px solid green;
-    /* border-bottom: 2px solid #14bf98;
-    border-top: 2px solid #14bf98; */
-    /* background: #14bf98; */
+    display: flex;
+    align-items: center;
+}
+
+.left::after {
+    content: "";
+    background-color: green;
+    width: 100%;
+    height: 2px;
+}
+
+.left video {
+    margin-left: 10%;
+    box-shadow: -5px 5px 5px #b1b1b1;
 }
 
 .right {
-    /* border-top: 2px solid #14bf98;
-    border-bottom: 2px solid #14bf98; */
-    border-left: 2px solid green;
-    /* background: #14bf98; */
+    display: flex;
+    align-items: center;
+}
+
+.right::before {
+    content: "";
+    background-color: green;
+    width: 100%;
+    height: 2px;
+}
+
+.right video {
+    margin-right: 10%;
+    box-shadow: 5px 5px 5px #b1b1b1;
 }
 
 .description {
     width: 50%;
     font-family: "Open Sans", sans-serif;
-    /* padding: 20px; */
-    /* border: 2px dashed red; */
 }
 
+
 .description h2 {
-    width: 100%;
     color: #484a46;
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
+    padding: 0 50px;
 }
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     align-items: center;
     gap: 10px;
 }
 
 .content .icon {
-    width: 35px;
-    height: 35px;
+    width: 35px !important;
+    height: 35px !important;
     border-radius: 50%;
-    background-color: #14bf98;
+    background-color: green;
     color: #ffffff;
     font-weight: 700;
     font-size: 1rem;
@@ -98,7 +134,7 @@ section {
 .content .attention {
     background-color: #FFDA1C;
     color: #4B4B4B;
-    border: 1px solid #14bf98;
+    border: 1px solid green;
 }
 
 .content p {
@@ -109,22 +145,58 @@ section {
     line-height: 1.625rem;
     letter-spacing: -0.4px;
     text-align: left;
+    width: 90%;
 }
 
 .desenvolvedores {
     display: flex;
+    position: relative;
     width: 100%;
+    gap: 50px;
     align-items: center;
     justify-content: center;
+    height: 80px;
 } 
 
+.desenvolvedores::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 110px;
+    height: 2px;
+    background-color: green;
+}
+
 .desenvolvedor {
+    display: flex;
+    align-items: flex-end;
     padding: 10px;
+    position: relative;
+    height: 100%;
+}
+
+.desenvolvedor::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 2px;
+    height: calc(100% - 30px);
+    background-color: green;
+}
+
+.desenvolvedor a {
+    text-decoration: none;
+    color: #000;
+    transition: 1s;
+}
+
+.desenvolvedor a:hover {
+    color: green;
 }
 
 .linha {
     background-color: green;
     width: 2px;
     height: 10px;
-    /* border: 1px solid green; */
 }
